@@ -43,11 +43,7 @@ app.put('/products/:id', validateName, productsController.update);
 app.delete('/products/:id', validateProductId, productsController.deleteProduct);
 
 // sales
-app.get('/sales', async (_req, res) => {
-  const sales = await salesModel.findAll();
-
-  return res.status(200).json(sales);
-});
+app.get('/sales', salesController.findAll);
 
 app.get('/sales/:id', async (req, res) => {
   const { id } = req.params;
@@ -59,10 +55,6 @@ app.get('/sales/:id', async (req, res) => {
   return res.status(200).json(sale);
 });
 
-app.post('/sales', validateId, validateQuantity, validateIdAtSingleReq, async (req, res) => {
-  const newSale = await salesController.insert(req, res);
-  
-  return res.status(201).json(newSale);
-});
+app.post('/sales', validateId, validateQuantity, validateIdAtSingleReq, salesController.insert);
 
 module.exports = app;

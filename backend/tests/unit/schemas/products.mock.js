@@ -34,7 +34,7 @@ const productFromServiceNotFound = {
 
 const productServiceCreated = {
   status: 'CREATED',
-  data: oneProductFromDB,
+  data: newProductForDB,
 };
 
 module.exports = {
