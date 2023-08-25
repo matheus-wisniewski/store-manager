@@ -27,8 +27,20 @@ const newProductForDB = [
   },
 ];
 
+const productFromServiceNotFound = {
+  status: 'NOT_FOUND',
+  data: { message: 'message' },
+};
+
+const productServiceCreated = {
+  status: 'CREATED',
+  data: oneProductFromDB,
+};
+
 module.exports = {
   allProductsFromDB,
   oneProductFromDB,
   newProductForDB,
+  productFromServiceNotFound,
+  productServiceCreated,
 };
