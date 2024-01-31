@@ -11,5 +11,6 @@ O principal objetivo deste projeto é criar uma API robusta e escalável para ge
 1. Node.js;
 2. Express.js;
 3. MySQL;
+4. Docker;
 
 Além disso, foram aplicados conceitos de arquitetura de software, separando as responsabilidades em modelos (Model), serviços (Service) e controladores (Controller), para garantir uma estrutura organizada e de fácil manutenção. <br>
