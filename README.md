@@ -1,4 +1,4 @@
-# Olá, boas-vindas ao repositório do projeto Talker Manager!
+# Olá, boas-vindas ao repositório do projeto Store Manager!
 
 # Sobre o projeto
 
